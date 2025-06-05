@@ -1,24 +1,93 @@
+/* Corrección visual para input y botón */
 input {
-  width: 500px;
-  height: 40px;
-  font-size: 18px;
+  width: 300px; /* se cambio de 500 a 300 */
+  padding: 10px;
+  font-size: 16px; /* se cambio de 18px a 16px */
+  margin-right: 10px;
+  border: 3px solid #a97892; 
+  outline: none;
+  color: #333;
+  border-radius: 4px;
 }
 
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #F08080; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Evita cambio de color al pasar el mouse */
+button:hover {
+  background-color: #FA8072; 
+}
+
+/* Evita cambio de color cuando está enfocado (por ejemplo, al usar tabulador) */
+button:focus {
+  background-color: #FA8072;
+  outline: none; /* opcional, para quitar el borde que aparece al enfocar */
+}
+
+/* Evita cambio de color cuando se hace clic */
+button:active {
+  background-color: #FA8072;
+}
+
+button:hover {
+  background-color: #FA8072;
+}
+
+/* Contenedor de productos en cuadrícula */
 #lista-de-productos {
-  display: flex
+  margin-top: 20px;
+  display: grid; /* Se cambio de flex a grid */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
 }
 
+/*Color del titulo */
+.titulo-principal {
+  color: #cf9e76;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Caja de cada producto */
 .producto {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 3px solid #9fc3f4;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+  background-color: white;
+}
+/* Se queda igual */
+.producto:hover {
+  transform: scale(1.05);
 }
 
-.producto img {
-  width: 70%;
-  height: auto
+/* Estilo para título */
+.titulo {
+  color: #89687a;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
+
+/* Imágenes */
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Color de fondo de la pág */
+body {
+  background-color: #fdf2e9;
+}
+

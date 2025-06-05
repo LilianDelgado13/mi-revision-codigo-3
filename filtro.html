@@ -5,20 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Title estaba en la linea 9 y la pase a la linea 8-->
+  <title>Filtros en JS</title> 
   <link rel="stylesheet" href="filtro.css">
-  <title>Filtros en JS</title>
+  
 </head>
 
 <body>
-
-  <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
+<!-- Mejora visual para centrar y limitar el contenido -->
+  <div style="max-width: 900px; margin: auto; padding: 40px 20px;"> 
+<!-- Input para filtrar por color o tipo -->    
+      <input type="text" placeholder="Selecciona un color o tipo">
       <button>Filtrar</button>
-      <h1>Lista de productos </h1>
+<!--Agregué el class al h1-->
+      <h1 class="titulo-principal">Lista de productos</h1>
+      <!-- Aquí se insertan los productos desde JavaScript -->
       <div id="lista-de-productos">
     </div>
   </div>
-  <script src="../filtro.js"></script>
+<!-- Corrección de ruta del JS (se elimino "../") -->
+<!-- Ya que se estaba buscando filtro.js en la carpeta padre del directorio actual, pero en este caso el archivo filtro.js está en la misma carpeta-->
+  <script src="filtro.js"></script>
 </body>
 
 </html>

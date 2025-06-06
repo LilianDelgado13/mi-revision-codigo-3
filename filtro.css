@@ -36,58 +36,47 @@ button:active {
   background-color: #FA8072;
 }
 
-button:hover {
-  background-color: #FA8072;
-}
-
-/* Contenedor de productos en cuadrícula */
+/* NUEVO: Estilo para centrar y mostrar productos como lista */
 #lista-de-productos {
-  margin-top: 20px;
-  display: grid; /* Se cambio de flex a grid */
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column; /* productos en columna */
+  align-items: center; /* centrado horizontal */
+  gap: 20px; /* espacio entre productos */
+  margin-top: 30px;
 }
 
-/*Color del titulo */
-.titulo-principal {
-  color: #cf9e76;
-  font-size: 2em;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-
-/* Caja de cada producto */
+/* NUEVO: Estilo de cada producto */
 .producto {
-  border: 3px solid #9fc3f4;
-  border-radius: 10px;
-  padding: 15px;
+  border: 2px solid #87CEFA;
+  padding: 10px;
+  width: 300px;
   text-align: center;
-  transition: transform 0.3s;
-  background-color: white;
-}
-/* Se queda igual */
-.producto:hover {
-  transform: scale(1.05);
+  border-radius: 10px;
+  background-color: #fff;
 }
 
-/* Estilo para título */
-.titulo {
-  color: #89687a;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Imágenes */
+/* NUEVO: Asegura que la imagen se ajuste bien */
 .producto img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 
-/* Color de fondo de la pág */
+/* NUEVO: Título con margen y estilo claro */
+.titulo {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #5c3b4d;
+}
+
+/* NUEVO: Fondo general y texto centrado */
 body {
-  background-color: #fdf2e9;
+  background-color: #fceee3;
+  font-family: sans-serif;
+  text-align: center;
 }
 
+/* NUEVO: Estilo del título principal */
+.titulo-principal {
+  color: #d2957b;
+  margin-top: 20px;
+}
